@@ -59,6 +59,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Untitled0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/04/08/Untitled0/" class="article-date">
+  <time datetime="2014-04-08T05:07:52.000Z" itemprop="datePublished">Apr 8 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: GB energy of Fe (100)#文章页面上的显示名称，可以任意修改，不会出现在URL中<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories: Reserach #文章分类目录，可以为空，注意:后面有个空格<br>tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格<br>GB energy of Fe (100) with grain size of 60 Angstrom, and searching grid of 6.</p>
+<pre><code>%matplotlib inline
+
+
+<span class="comment"># import time</span>
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt
+<span class="keyword">from</span> matplotlib.cbook <span class="keyword">import</span> Sorter
+<span class="comment"># import GBFe100</span>
+sort = Sorter()
+f = open(<span class="string">'all-GBs.txt'</span>, <span class="string">'r'</span>)
+data = np.genfromtxt(<span class="string">'all-GBs.txt'</span>, names=<span class="keyword">True</span>)
+data = sort(data)
+fig = plt.figure()
+plt.ylabel(<span class="string">'$\mathrm{Grain\ boundary\ energy\ (J/m^2)}$'</span>)
+plt.xlabel(<span class="string">'$\mathrm{Angle\ (degrees)}$'</span>)
+plt.axis([<span class="number">0</span>, <span class="number">90</span>, <span class="number">0</span>, <span class="number">1500</span>])
+plt.plot(data[<span class="string">'Angle'</span>], data[<span class="string">'GB_energy'</span>], <span class="string">'--ro'</span>)
+fig.savefig(<span class="string">'allGB.png'</span>, transparent=<span class="keyword">True</span>, bbox_inches=<span class="string">'tight'</span>,
+            pad_inches=<span class="number">0</span>, dpi=<span class="number">300</span>)
+plt.show()
+</code></pre><p><img src="Untitled0_files/Untitled0_2_0.png" alt="png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/04/08/Untitled0/" data-id="m8g8i9e7jen7855k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/04/07/hello-world/" class="article-date">
@@ -87,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/04/07/hello-world/" data-id="vgudpec97l5rccoa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/04/07/hello-world/" data-id="uepyxv47depqovde" class="article-share-link">Share</a>
       
       
     </footer>
@@ -112,7 +160,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04">April 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04">April 2014</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -122,6 +170,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/04/08/Untitled0/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2014/04/07/hello-world/">S to S</a>
