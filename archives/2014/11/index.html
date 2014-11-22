@@ -4,15 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>S to S | 候鸟之远</title>
+  <title>Archives: 2014/11 | 候鸟之远</title>
   <meta name="author" content="Shuai Wang">
-  
-  <meta name="description" content="Most days have no impact on the course of a lifeBut I have to thank April 7th AD1988It brings youIt colors my life with you
-I Love Us,S. to S.     @20">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta property="og:title" content="S to S"/>
+  
   <meta property="og:site_name" content="候鸟之远"/>
   
   
@@ -43,19 +40,80 @@ I Love Us,S. to S.     @20">
   </nav>
   <div class="clearfix"></div>
 </header>
-    <div class="content"><article class="post">
+    <div class="content">
+
+
+<h2 class="archives-title"><span>2014</span></h2>
+
+
+
+  
+    <article class="post">
   <header>
     
       <div class="icon"></div>
-      <a href="/2014/04/07/hello-world/">
-  <time datetime="2014-04-06T15:00:00.000Z">
-    Apr 7 2014
+      <a href="/2014/11/23/use KM variable in python/">
+  <time datetime="2014-11-22T16:44:12.000Z">
+    Nov 23 2014
   </time>
 </a>
     
     
   
-    <h1 class="title">S to S</h1>
+    <h1 class="title"><a href="/2014/11/23/use KM variable in python/">How to use KM variables in python</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>How to make the KM variables goes to python is not well documented in the KM website.<br>One example can find from <code>http://www.macdrifter.com/2012/02/text-processing-macros.html</code><br>My example is:</p>
+<figure class="highlight {python}"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="comment">#!/usr/bin/env python</span>
+<span class="keyword">import</span> os
+comment = os.getenv(<span class="string">'KMVAR_mytext'</span>)
+<span class="keyword">try</span>:
+	code = <span class="string">'*'</span> * ((<span class="number">73</span> - len(comment)) / <span class="number">2</span>)
+	<span class="keyword">print</span> <span class="string">'\n# '</span> + code + comment + code
+<span class="keyword">except</span> TypeError:
+	<span class="keyword">print</span><span class="string">'\n# FIXME HERE'</span>
+</pre></td></tr></table></figure>
+
+<p>In which the <code>mytext</code> came from <code>CurrentClipboard</code>.</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2014/11/23/hello-world/">
+  <time datetime="2014-11-22T16:44:00.000Z">
+    Nov 23 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/11/23/hello-world/"></a></h1>
   
 
   </header>
@@ -67,7 +125,7 @@ I Love Us,S. to S.     @20">
 
     
   </div>
-  <footer>
+  <footer class="end-sep">
     
       
       
@@ -77,11 +135,14 @@ I Love Us,S. to S.     @20">
 </article>
 
 
-<section id="comment">
-  <h1 class="title">Comments</h1>
-  <div class="ds-thread" data-title="S to S">
-  </div>
-</section>
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+
 </div>
   </div>
   <footer id="footer"><div class="copyright">
