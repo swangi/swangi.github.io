@@ -81,6 +81,59 @@
 
 
   
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/0023/08/14/use KM variable in python/">
+  <time datetime="0023-08-13T16:37:00.000Z">
+    Aug 14 0023
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/0023/08/14/use KM variable in python/">How to use KM variables in python</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>How to make the KM variables goes to python is not well documented in the KM website.<br>One example can find from <code>http://www.macdrifter.com/2012/02/text-processing-macros.html</code><br>My example is:</p>
+<figure class="highlight {python}"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="comment">#!/usr/bin/env python</span>
+<span class="keyword">import</span> os
+comment = os.getenv(<span class="string">'KMVAR_mytext'</span>)
+<span class="keyword">try</span>:
+	code = <span class="string">'*'</span> * ((<span class="number">73</span> - len(comment)) / <span class="number">2</span>)
+	<span class="keyword">print</span> <span class="string">'\n# '</span> + code + comment + code
+<span class="keyword">except</span> TypeError:
+	<span class="keyword">print</span><span class="string">'\n# FIXME HERE'</span>
+</pre></td></tr></table></figure>
+
+<p>In which the <code>mytext</code> came from <code>CurrentClipboard</code>.</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
 
   <nav id="pagination">
   
