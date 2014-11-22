@@ -50,61 +50,6 @@
   <header>
     
       <div class="icon"></div>
-      <a href="/2014/04/08/GB-Fe-60-6/">
-  <time datetime="2014-04-08T05:10:38.000Z">
-    Apr 8 2014
-  </time>
-</a>
-    
-    
-  
-    <h1 class="title"><a href="/2014/04/08/GB-Fe-60-6/">GB energy of 50 Fe(100)</a></h1>
-  
-
-  </header>
-  
-  <div class="entry">
-    
-      <p>GB energy of Fe (100) with grain size of 60 Angstrom, and searching grid of 6.</p>
-<pre><code>%matplotlib inline
-
-
-<span class="comment"># import time</span>
-<span class="keyword">import</span> numpy <span class="keyword">as</span> np
-<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt
-<span class="keyword">from</span> matplotlib.cbook <span class="keyword">import</span> Sorter
-<span class="comment"># import GBFe100</span>
-sort = Sorter()
-f = open(<span class="string">'all-GBs.txt'</span>, <span class="string">'r'</span>)
-data = np.genfromtxt(<span class="string">'all-GBs.txt'</span>, names=<span class="keyword">True</span>)
-data = sort(data)
-fig = plt.figure()
-plt.ylabel(<span class="string">'$\mathrm{Grain\ boundary\ energy\ (J/m^2)}$'</span>)
-plt.xlabel(<span class="string">'$\mathrm{Angle\ (degrees)}$'</span>)
-plt.axis([<span class="number">0</span>, <span class="number">90</span>, <span class="number">0</span>, <span class="number">1500</span>])
-plt.plot(data[<span class="string">'Angle'</span>], data[<span class="string">'GB_energy'</span>], <span class="string">'--ro'</span>)
-fig.savefig(<span class="string">'allGB.png'</span>, transparent=<span class="keyword">True</span>, bbox_inches=<span class="string">'tight'</span>,
-            pad_inches=<span class="number">0</span>, dpi=<span class="number">300</span>)
-plt.show()
-</code></pre><p><img src="/img/GB-Fe-60-6.png" alt="GB energy of 50 Fe(100)" title="GB energy of 50 Fe(100)"><br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" title="GitHub Mark"></p>
-
-    
-  </div>
-  <footer class="end-sep">
-    
-      
-      
-    
-    <div class="clearfix"></div>
-  </footer>
-</article>
-
-
-  
-    <article class="post">
-  <header>
-    
-      <div class="icon"></div>
       <a href="/2014/04/07/hello-world/">
   <time datetime="2014-04-06T15:00:00.000Z">
     Apr 7 2014
